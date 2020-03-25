@@ -21,7 +21,6 @@ Este documento es una guía sobre qué información debe entregar como parte de 
 A continuación se mencionan los requerimientos técnicos mínimos de la tarea, favor de tenerlos presente para que cumpla con todos.
 
 * El equipo tiene la libertad de elegir las tecnologías de desarrollo a utilizar en la tarea, sin embargo, debe tener presente que la solución final se deberá ejecutar en una plataforma en la nube. Puede ser  [Google Cloud Platform](https://cloud.google.com/?hl=es), [Azure](https://azure.microsoft.com/en-us/), [AWS](https://aws.amazon.com/es/free/) u otra.
-* El equipo tiene la libertad de utilizar el DBMS de su preferencia.
 * La arquitectura de la solución deberá estar separada claramente por capas (*frontend*, *backend*, datos y almacenamiento).
 * Todo el código, *scripts* y la documentación de la tarea debe alojarse en este repositorio de GitHub, siguiendo la estructura que aparece a continuación.
 
@@ -32,9 +31,9 @@ El proyecto debe seguir la siguiente estructura de carpetas:
 - / 			        # Raíz de toda la tarea
     - README.md			# Archivo con la información general de la tarea (este archivo)
     - frontend			# Carpeta con la solución del frontend (Web app)
-    - backend			# Carpeta con la solución del backend en caso de ser necesario (CMS o API)
+    - backend			# Carpeta con la solución del backend (API)
     - scripts		        # Carpeta con los scripts necesarios para generar la base de datos, cargar datos y ejecutar las consultas
-    - database			# Carpeta con el diagrama Entidad-Relación Extendido y los archivos CSV de datos necesarios para generar la bases de datos
+    - database			# Carpeta con el modelo de la bases de datos utilizando JSON Schema
 
 ```
 
@@ -42,9 +41,8 @@ El proyecto debe seguir la siguiente estructura de carpetas:
 
 Como parte de la entrega de la tarea, se debe incluir la siguiente información:
 
-* Diagrama del *Modelo Entidad-Relación Extendido*.
+* Diagrama del *Modelo de la base de datos utilizando JSON Schema*.
 * *Scripts* para generar la base de datos, cargar datos y ejecutar consultas.
-* Archivos CSV con los datos a cargar en al base de datos.
 * Guía de configuración, instalación y despliegue de la aplicación en la plataforma en la nube  seleccionada.
 * El código debe estar documentado siguiendo los estándares definidos para el lenguaje de programación seleccionado.
 
@@ -54,7 +52,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 2.1 Modelo de la *base de datos* 
 
-*[Incluya aquí el Diagrama Entidad-Relación Extendido y explique las jerarquías modeladas así como las restricciones existentes*
+*[Incluya aquí el modelo JSON Schema y explique los patrones utilizados en cada caso.*
 
 ### 2.2 Arquitectura de la solución
 
